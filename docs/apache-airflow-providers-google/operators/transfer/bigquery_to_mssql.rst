@@ -16,15 +16,14 @@
     under the License.
 
 
-Google Cloud Storage Transfer Operator to BigQuery
-==================================================
+Google Cloud BigQuery Transfer Operator to Microsoft SQL Server
+===============================================================
 
-`Google Cloud Storage (GCS) <https://cloud.google.com/storage/>`__ is a managed service for 
-storing unstructured data.
 `Google Cloud BigQuery <https://cloud.google.com/bigquery>`__ is Google Cloud's serverless
 data warehouse offering.
-This operator can be used to populate BigQuery tables with data from files stored in a
-Cloud Storage bucket.
+`Microsoft SQL Server (MSSQL) <https://www.microsoft.com/en-us/sql-server/sql-server-2019>`__
+is a relational database management system developed by Microsoft.
+This operator can be used to copy data from a BigQuery table to MSSQL.
 
 
 Prerequisite Tasks
@@ -32,29 +31,29 @@ Prerequisite Tasks
 
 .. include::/operators/_partials/prerequisite_tasks.rst
 
-.. _howto/operator:GCSToBigQueryOperator:
+.. _howto/operator:BigQueryToMsSqlOperator:
 
 Operator
 ^^^^^^^^
 
-File transfer from GCS to BigQuery is performed with the
-:class:`~airflow.providers.google.cloud.transfers.gcs_to_bigquery.GCSToBigQueryOperator` operator.
+Copying data from one BigQuery table to another is performed with the
+:class:`~airflow.providers.google.cloud.transfers.bigquery_to_mssql.BigQueryToMsSqlOperator` operator.
 
 Use :ref:`Jinja templating <concepts:jinja-templating>` with
-:template-fields:`airflow.providers.google.cloud.transfers.gcs_to_bigquery.GCSToBigQueryOperator`
+:template-fields:`airflow.providers.google.cloud.transfers.bigquery_to_mssql.BigQueryToMsSqlOperator`
 to define values dynamically.
 
 
-Transferring files
-------------------
+Transferring data
+-----------------
 
-The following Operator transfers one or more files from GCS into a BigQuery table.
+The following Operator copies data from a BigQuery table to MSSQL.
 
-.. exampleinclude:: /../../tests/system/providers/google/cloud/gcs/example_gcs_to_bigquery.py
+.. exampleinclude:: /../../tests/system/providers/google/cloud/bigquery/example_bigquery_to_mssql.py
     :language: python
     :dedent: 4
-    :start-after: [START howto_operator_gcs_to_bigquery]
-    :end-before: [END howto_operator_gcs_to_bigquery]
+    :start-after: [START howto_operator_bigquery_to_mssql]
+    :end-before: [END howto_operator_bigquery_to_mssql]
 
 
 Reference
@@ -62,5 +61,5 @@ Reference
 
 For further information, look at:
 
-* `Google Cloud Storage Documentation <https://cloud.google.com/storage/>`__
-* `Google Cloud BigQuery Documentation <https://cloud.google.com/bigquery/docs/batch-loading-data>`__
+* `Google Cloud BigQuery Documentation <https://cloud.google.com/bigquery/docs/>`__
+* `Microsoft SQL Server Documentation <https://docs.microsoft.com/en-us/sql/?view=sql-server-ver15>`__
