@@ -45,10 +45,10 @@ Use :ref:`Jinja templating <concepts:jinja-templating>` with
 to define values dynamically.
 
 
-Importing files
----------------
+Transfering files
+-----------------
 
-The following Operator imports one or more files from GCS into a BigQuery table.
+The following Operator transfers one or more files from GCS into a BigQuery table.
 
 .. exampleinclude:: /../../tests/system/providers/google/cloud/gcs/example_gcs_to_bigquery.py
     :language: python
