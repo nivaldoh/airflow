@@ -29,11 +29,10 @@ Prerequisite Tasks
 
 .. include::/operators/_partials/prerequisite_tasks.rst
 
+.. _howto/operator:BigQueryToBigQueryOperator:
 
 Operator
 ^^^^^^^^
-
-.. _howto/operator:BigQueryToBigQueryOperator:
 
 Copying data from one BigQuery table to another is performed with the
 :class:`~airflow.providers.google.cloud.transfers.bigquery_to_bigquery.BigQueryToBigQueryOperator` operator.

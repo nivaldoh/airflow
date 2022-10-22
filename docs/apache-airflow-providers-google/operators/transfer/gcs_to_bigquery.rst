@@ -32,11 +32,10 @@ Prerequisite Tasks
 
 .. include::/operators/_partials/prerequisite_tasks.rst
 
+.. _howto/operator:GCSToBigQueryOperator:
 
 Operator
 ^^^^^^^^
-
-.. _howto/operator:GCSToBigQueryOperator:
 
 File transfer from GCS to BigQuery is performed with the
 :class:`~airflow.providers.google.cloud.transfers.gcs_to_bigquery.GCSToBigQueryOperator` operator.
