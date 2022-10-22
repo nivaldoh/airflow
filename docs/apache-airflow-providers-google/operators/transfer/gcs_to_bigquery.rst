@@ -17,7 +17,7 @@
 
 
 Google Cloud Storage Transfer Operator to BigQuery
-==============================================
+==================================================
 
 `Google Cloud Storage (GCS) <https://cloud.google.com/storage/>`__ is a managed service for 
 storing unstructured data.
@@ -32,11 +32,11 @@ Prerequisite Tasks
 
 .. include::/operators/_partials/prerequisite_tasks.rst
 
-.. _howto/operator:GCSToBigQueryOperator:
-
 
 Operator
 ^^^^^^^^
+
+.. _howto/operator:GCSToBigQueryOperator:
 
 File transfer from GCS to BigQuery is performed with the
 :class:`~airflow.providers.google.cloud.transfers.gcs_to_bigquery.GCSToBigQueryOperator` operator.
@@ -47,11 +47,11 @@ to define values dynamically.
 
 
 Importing files
----------------------
+---------------
 
 The following Operator imports one or more files from GCS into a BigQuery table.
 
-.. exampleinclude:: /../../tests/system/providers/google/cloud/transfers/example_gcs_to_bigquery.py
+.. exampleinclude:: /../../tests/system/providers/google/cloud/gcs/example_gcs_to_bigquery.py
     :language: python
     :dedent: 4
     :start-after: [START howto_operator_gcs_to_bigquery]

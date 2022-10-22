@@ -17,7 +17,7 @@
 
 
 BigQuery to Transfer Operator to BigQuery
-==============================================
+=========================================
 
 `Google Cloud BigQuery <https://cloud.google.com/bigquery>`__ is Google Cloud's serverless
 data warehouse offering.
@@ -29,11 +29,11 @@ Prerequisite Tasks
 
 .. include::/operators/_partials/prerequisite_tasks.rst
 
-.. _howto/operator:BigQueryToBigQueryOperator:
-
 
 Operator
 ^^^^^^^^
+
+.. _howto/operator:BigQueryToBigQueryOperator:
 
 Copying data from one BigQuery table to another is performed with the
 :class:`~airflow.providers.google.cloud.transfers.bigquery_to_bigquery.BigQueryToBigQueryOperator` operator.
@@ -44,17 +44,17 @@ to define values dynamically.
 
 
 Copying BigQuery tables
----------------------
+-----------------------
 
 The following Operator copies data from BigQuery table to another. Multiple source tables can be inputted
 as a list, and the destination table may be created/appended/overwritten. For additional details, refer to
 the operator documentation referenced above.
 
-.. exampleinclude:: /../../tests/system/providers/google/cloud/transfers/example_bigquery_to_bigquery.py
+.. exampleinclude:: /../../tests/system/providers/google/cloud/bigquery/example_bigquery_to_bigquery.py
     :language: python
     :dedent: 4
     :start-after: [START howto_operator_bigquery_to_bigquery]
-    :end-before: [START howto_operator_bigquery_to_bigquery]
+    :end-before: [END howto_operator_bigquery_to_bigquery]
 
 
 Reference
