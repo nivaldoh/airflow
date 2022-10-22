@@ -16,8 +16,8 @@
     under the License.
 
 
-BigQuery to Transfer Operator to BigQuery
-=========================================
+Google Cloud BigQuery Transfer Operator to BigQuery
+===================================================
 
 `Google Cloud BigQuery <https://cloud.google.com/bigquery>`__ is Google Cloud's serverless
 data warehouse offering.
